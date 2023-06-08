@@ -21,7 +21,7 @@ To use the Maze Solver, follow these steps:
 ## Example
 Here's an example maze matrix:
 
-'''python
+'''
 matrix = [
     [1, 1, 0, 1],
     [0, 1, 1, 0],
