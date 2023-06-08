@@ -1,142 +1,42 @@
-Maze Solver
-This repository contains Python code for solving a maze using two different approaches: breadth-first search (BFS) and depth-first search (DFS).
-
-Description
-The code consists of two main functions:
-
-Maze(matrix)
-
-This function solves the maze using breadth-first search (BFS) algorithm.
-It takes a matrix as input, where the maze is represented as a grid of 1s (path) and 0s (obstacle).
-The function returns the number of valid paths from the start to the exit of the maze.
-Mazedfs(matrix)
-
-This function solves the maze using depth-first search (DFS) algorithm.
-It takes a matrix as input, similar to the Maze() function.
-The function returns a list of coordinates representing a valid path from the start to the exit of the maze.
-Usage
-Clone the repository:
-
-bash
-Copy code
-git clone https://github.com/your-username/maze-solver.git
-Navigate to the project directory:
-
-bash
-Copy code
-cd maze-solver
-Open the code file (maze_solver.py) and modify the matrix variable to define your maze.
-
-Run the code:
-
-bash
-Copy code
-python maze_solver.py
-The output will display the number of valid paths found by the BFS algorithm and the list of coordinates representing the path found by the DFS algorithm.
-
-Dependencies
-The code requires the collections module from the Python standard library.
-
-Contributing
-Contributions to this project are welcome. You can contribute by following these steps:
-
-Fork the repository.
-
-Create a new branch:
-
-bash
-Copy code
-git checkout -b feature/your-feature
-Make your modifications and commit them:
-
-bash
-Copy code
-git commit -m "Add your message here"
-Push to the branch:
-
-bash
-Copy code
-git push origin feature/your-feature
-Create a pull request.
-
-License
-This project is licensed under the MIT License.
-
-Contact
-If you have any questions or suggestions, please feel free to contact me at your-email@example.com.
-
-Note: This README template is adapted from the README-Template.md by PurpleBooth.
-
-
-
-
-
-User
-good give it to me like code so i can copy it in one go use ## for big sections titles
-ChatGPT
-Certainly! Here's the README page in code format:
-
-markdown
-Copy code
-## Maze Solver
-
-This repository contains Python code for solving a maze using two different approaches: breadth-first search (BFS) and depth-first search (DFS).
+# Maze Solver
 
 ## Description
+The Maze Solver is a Python program that solves a maze represented by a matrix. It uses breadth-first search (BFS) and depth-first search (DFS) algorithms to find the number of possible paths and the optimal path from the start point to the end point of the maze.
 
-The code consists of two main functions:
+## Maze Solving Algorithm
+The program uses two algorithms for maze solving:
 
-1. **Maze(matrix)**
-   - This function solves the maze using breadth-first search (BFS) algorithm.
-   - It takes a matrix as input, where the maze is represented as a grid of 1s (path) and 0s (obstacle).
-   - The function returns the number of valid paths from the start to the exit of the maze.
+1. Breadth-First Search (BFS): It starts from the top-left corner of the maze and explores all possible paths until it reaches the bottom-right corner. It counts the number of possible paths from the start to the end.
 
-2. **Mazedfs(matrix)**
-   - This function solves the maze using depth-first search (DFS) algorithm.
-   - It takes a matrix as input, similar to the Maze() function.
-   - The function returns a list of coordinates representing a valid path from the start to the exit of the maze.
+2. Depth-First Search (DFS): It starts from the top-left corner and explores each path until it reaches a dead end or the bottom-right corner. It backtracks whenever it reaches a dead end and continues exploring other paths. It finds the optimal path from the start to the end.
 
 ## Usage
+To use the Maze Solver, follow these steps:
 
-1. Clone the repository:
+1. Define the maze matrix: Modify the `matrix` variable in the code to represent your maze. Use 1 to represent open paths and 0 to represent walls.
+2. Run the program: Execute the code to run the Maze Solver.
+3. Results:
+   - The program will output the number of possible paths found using the BFS algorithm.
+   - It will also output the optimal path found using the DFS algorithm.
 
-   ```bash
-   git clone https://github.com/assiltarhouni/maze-solver.git
-Navigate to the project directory:
+## Example
+Here's an example maze matrix:
 
-bash
-Copy code
-cd maze-solver
-Open the code file (maze_solver.py) and modify the matrix variable to define your maze.
+```python
+matrix = [
+    [1, 1, 0, 1],
+    [0, 1, 1, 0],
+    [0, 0, 1, 1],
+    [0, 1, 1, 1]
+]
 
-Run the code:
+# BFS Maze Solver
+print("Number of possible paths (BFS):", Maze(matrix))
 
-bash
-Copy code
-python maze_solver.py
-The output will display the number of valid paths found by the BFS algorithm and the list of coordinates representing the path found by the DFS algorithm.
+# DFS Maze Solver
+path = Mazedfs(matrix)
+print("Optimal path (DFS):", path)
+Make sure to modify the matrix variable to match your desired maze configuration.
 
-Dependencies
-The code requires the collections module from the Python standard library.
-
-Contributing
-Contributions to this project are welcome. You can contribute by following these steps:
-
-Fork the repository.
-
-Create a new branch:
-
-bash
-Copy code
-git checkout -b feature/your-feature
-Make your modifications and commit them:
-
-bash
-Copy code
-git commit -m "Add your message here"
-Push to the branch:
-
-bash
-Copy code
-git push origin feature/your-feature
-Create a pull request.
+##Contributing
+Contributions to the Maze Solver project are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
