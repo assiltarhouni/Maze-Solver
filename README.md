@@ -37,3 +37,12 @@ print("Number of possible paths (BFS):", Maze(matrix))
 path = Mazedfs(matrix)
 print("Optimal path (DFS):", path)
 Make sure to modify the matrix variable to match your desired maze configuration.
+
+
+
+
+
+
+
+## Description
+The Maze Solver is a Python program that solves a maze represented by a matrix. It uses breadth-first search (BFS) and depth-first search (DFS) algorithms to find the number of possible paths and the optimal path from the start point to the end point of the maze.
