@@ -21,7 +21,7 @@ To use the Maze Solver, follow these steps:
 ## Example
 Here's an example maze matrix:
 
-''python
+\'''python
 matrix = [
     [1, 1, 0, 1],
     [0, 1, 1, 0],
@@ -36,7 +36,7 @@ print("Number of possible paths (BFS):", Maze(matrix))
 path = Mazedfs(matrix)
 print("Optimal path (DFS):", path)
 Make sure to modify the matrix variable to match your desired maze configuration.
-
+\```
 
 
 ## Contributing
