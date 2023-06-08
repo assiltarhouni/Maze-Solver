@@ -38,5 +38,4 @@ path = Mazedfs(matrix)
 print("Optimal path (DFS):", path)
 Make sure to modify the matrix variable to match your desired maze configuration.
 
-## **Contributing**
-Contributions to the Library Management System project are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
+## A second-level heading
