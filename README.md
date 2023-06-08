@@ -37,6 +37,6 @@ print("Number of possible paths (BFS):", Maze(matrix))
 path = Mazedfs(matrix)
 print("Optimal path (DFS):", path)
 Make sure to modify the matrix variable to match your desired maze configuration.
-'''
+'''python
 ## Contributing
 Contributions to the Maze Solver project are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
